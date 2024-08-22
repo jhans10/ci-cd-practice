@@ -25,7 +25,7 @@ public class ClientController {
         return ResponseEntity.of(Optional.ofNullable(iServiceClient.findById(id)));
     }
 
-    @PostMapping("/save-clients")
+    @PostMapping("/save-clients-2")
     public ResponseEntity<?> saveClient(@RequestBody Client client){
         return ResponseEntity.of(Optional.ofNullable(iServiceClient.saveClient(client)));
     }
